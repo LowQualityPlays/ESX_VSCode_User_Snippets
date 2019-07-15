@@ -1,0 +1,848 @@
+{
+	// Created by Low Quality Plays
+	// https://github.com/LowQualityPlays
+	// Drop a follow if you want to! :) [PT-BR] https://www.twitch.tv/lowqualityplays 
+
+	"ESX.GetPlayerData": {
+		"prefix": "ESX.GetPlayerData",
+		"body":[
+			"ESX.GetPlayerData()"
+		],
+		"description": "[Client] This function gets player data."
+	},
+	"ESX.IsPlayerLoaded":{
+		"prefix":"ESX.IsPlayerLoaded",
+		"body": [
+			"ESX.IsPlayerLoaded()"
+		],
+		"description": "[Client] This function checks if the player is loaded."
+	},
+	
+	"ESX.SetPlayerData(key, val)":{
+		"prefix":"ESX.SetPlayerData(key, val)",
+		"body": [
+			"ESX.SetPlayerData(key, val)"
+		],
+		"description": "[Client] This function sets player data."
+	},
+	
+	"ESX.ShowAdvancedNotification(title, subject, msg, icon, iconType)":{
+		"prefix":"ESX.ShowAdvancedNotification(title, subject, msg, icon, iconType)",
+		"body": [
+			"ESX.ShowAdvancedNotification(title, subject, msg, icon, iconType)"
+		],
+		"description": "[Client] This function shows an advanced notification. See Arguments Explained for an explanation of what each argument does."
+	},
+	"ESX.ShowHelpNotification(msg)":{
+		"prefix":"ESX.ShowHelpNotification(msg)",
+		"body": [
+			"ESX.ShowHelpNotification(msg)"
+		],
+		"description": "[Client] This function shows a help notification with the parsed message. These help notification support displaying button inputs, see this list",
+	},
+	"ESX.ShowInventory()":{
+		"prefix":"ESX.ShowInventory()",
+		"body": [
+			"ESX.ShowInventory()"
+		],
+		"description": "[Client] This function shows the inventory."
+	},
+	
+	"ESX.ShowNotification(msg)":{
+		"prefix":"ESX.ShowNotification(msg)",
+		"body": [
+			"ESX.ShowNotification(msg)"
+		],
+		"description": "[Client] This function shows a basic notification to the player."
+	},
+	"ESX.TriggerServerCallback(name, cb, args)":{
+		"prefix":"ESX.TriggerServerCallback(name, cb, args)",
+		"body": [
+			"ESX.TriggerServerCallback(name, cb, args)"
+		],
+		"description": "[Client] This function triggers a server callback."
+	},
+	"ESX.Game.DeleteObject(object)":{
+		"prefix":"ESX.Game.DeleteObject(object)",
+		"body": [
+			"ESX.Game.DeleteObject(object)"
+		],
+		"description": "[Client] This function deletes an object."
+	},
+	"ESX.Game.DeleteVehicle(vehicle)":{
+		"prefix":"ESX.Game.DeleteVehicle(vehicle)",
+		"body": [
+			"ESX.Game.DeleteVehicle(vehicle)"
+		],
+		"description": "[Client] This function deletes the parsed vehicle."
+	},
+	"ESX.Game.GetClosestObject(filter, coords)":{
+		"prefix":"ESX.Game.GetClosestObject(filter, coords)",
+		"body": [
+			"ESX.Game.GetClosestObject(filter, coords)"
+		],
+		"description": "[Client] This function gets the closest object."
+	},
+	"ESX.Game.GetClosestPed(coords, ignoreList)":{
+		"prefix":"ESX.Game.GetClosestPed(coords, ignoreList)",
+		"body": [
+			"ESX.Game.GetClosestPed(coords, ignoreList)"
+		],
+		"description": "[Client] This function gets the closest ped."
+	},
+	"ESX.Game.GetClosestPlayer(coords)":{
+		"prefix":"ESX.Game.GetClosestPlayer(coords)",
+		"body": [
+			"ESX.Game.GetClosestPlayer(coords)"
+		],
+		"description": "[Client] This function gets the closest player."
+	},
+	"ESX.Game.GetClosestVehicle(coords)":{
+		"prefix":"ESX.Game.GetClosestVehicle(coords)",
+		"body": [
+			"ESX.Game.GetClosestVehicle(coords)"
+		],
+		"description": "[Client] This function gets the closest vehicle."
+	},
+	"ESX.Game.GetObjects()":{
+		"prefix":"ESX.Game.GetObjects()",
+		"body": [
+			"ESX.Game.GetObjects()"
+		],
+		"description": "[Client] This function gets objects."
+	},
+	"ESX.Game.GetPedMugshot(ped)":{
+		"prefix":"ESX.Game.GetPedMugshot(ped)",
+		"body": [
+			"ESX.Game.GetPedMugshot(ped)"
+		],
+		"description": "[Client] This function returns mugshot, mugshotStr. Be sure to use UnregisterPedheadshot(mugshot) after using it"
+	},
+	"ESX.Game.GetPeds(ignoreList)":{
+		"prefix":"ESX.Game.GetPeds(ignoreList)",
+		"body": [
+			"ESX.Game.GetPeds(ignoreList)"
+		],
+		"description": "[Client] This function gets peds."
+	},
+	"ESX.Game.GetPlayers()":{
+		"prefix":"ESX.Game.GetPlayers()",
+		"body": [
+			"ESX.Game.GetPlayers()"
+		],
+		"description": "[Client] This function gets players."
+	},
+	"ESX.Game.GetPlayersInArea(coords, radius)":{
+		"prefix":"ESX.Game.GetPlayersInArea(coords, radius)",
+		"body": [
+			"ESX.Game.GetPlayersInArea(coords, radius)"
+		],
+		"description": "[Client] This function gets players in a given radius."
+	},
+	"ESX.Game.GetVehicleInDirection()":{
+		"prefix":"ESX.Game.GetVehicleInDirection()",
+		"body": [
+			"ESX.Game.GetVehicleInDirection()"
+		],
+		"description": "[Client] This function gets the closest vehicle in the players' direction within 5 units, utilizes ray-casts."
+	},
+	"ESX.Game.GetVehicleProperties(vehicle)":{
+		"prefix":"ESX.Game.GetVehicleProperties(vehicle)",
+		"body": [
+			"ESX.Game.GetVehicleProperties(vehicle)"
+		],
+		"description": "[Client] This function gets a vehicles properties."
+	},
+	"ESX.Game.GetVehicles()":{
+		"prefix":"ESX.Game.GetVehicles()",
+		"body": [
+			"ESX.Game.GetVehicles()"
+		],
+		"description": "[Client] This function gets vehicles."
+	},
+	"ESX.Game.GetVehiclesInArea(coords, radius)":{
+		"prefix":"ESX.Game.GetVehiclesInArea(coords, radius)",
+		"body": [
+			"ESX.Game.GetVehiclesInArea(coords, radius)"
+		],
+		"description": "[Client] This function gets vehicles in a given radius."
+	},
+	"ESX.Game.IsSpawnPointClear(coords, radius)":{
+		"prefix":"ESX.Game.IsSpawnPointClear(coords, radius)",
+		"body": [
+			"ESX.Game.IsSpawnPointClear(coords, radius)"
+		],
+		"description": "[Client] Returns (boolean) if the spawn point coords area clear with no other vehicle in the parsed radius."
+	},
+	"ESX.Game.SetVehicleProperties(vehicle, props)":{
+		"prefix":"ESX.Game.SetVehicleProperties(vehicle, props)",
+		"body": [
+			"ESX.Game.SetVehicleProperties(vehicle, props)"
+		],
+		"description": "[Client] This function sets the properties for a vehicle."
+	},
+	"ESX.Game.SpawnLocalObject(modelOrHash, coords, cb)":{
+		"prefix":"ESX.Game.SpawnLocalObject(modelOrHash, coords, cb)",
+		"body": [
+			"ESX.Game.SpawnLocalObject(modelOrHash, coords, cb)"
+		],
+		"description": "[Client] This function spawns a local object, only visible to the local player and no one else."
+	},
+	"ESX.Game.SpawnLocalVehicle(modelOrHash, coords, heading, cb)":{
+		"prefix":"ESX.Game.SpawnLocalVehicle(modelOrHash, coords, heading, cb)",
+		"body": [
+			"ESX.Game.SpawnLocalVehicle(modelOrHash, coords, heading, cb)"
+		],
+		"description": "[Client] This function spawns a local vehicle, only visible to the local player and no one else."
+	},
+	"ESX.Game.SpawnObject(modelOrHash, coords, cb)":{
+		"prefix":"ESX.Game.SpawnObject(modelOrHash, coords, cb)",
+		"body": [
+			"ESX.Game.SpawnObject(modelOrHash, coords, cb)"
+		],
+		"description": "[Client] This function spawns an object."
+	},
+	"ESX.Game.SpawnVehicle(modelOrHash, coords, heading, cb)":{
+		"prefix":"ESX.Game.SpawnVehicle(modelOrHash, coords, heading, cb)",
+		"body": [
+			"ESX.Game.SpawnVehicle(modelOrHash, coords, heading, cb)"
+		],
+		"description": "[Client] This function spawns a vehicle."
+	},
+	"ESX.Game.Teleport(entity, coords, cb)":{
+		"prefix":"ESX.Game.Teleport(entity, coords, cb)",
+		"body": [
+			"ESX.Game.Teleport(entity, coords, cb)"
+		],
+		"description": "[Client] This function teleports an entity."
+	},
+	"ESX.Game.Utils.DrawText3D(coords, text, size)":{
+		"prefix":"ESX.Game.Utils.DrawText3D(coords, text, size)",
+		"body": [
+			"ESX.Game.Utils.DrawText3D(coords, text, size)"
+		],
+		"description": "[Client] This function draws 3D text."
+	},
+	"ESX.Scaleform.ShowBreakingNews(title, msg, bottom, sec)":{
+		"prefix":"ESX.Scaleform.ShowBreakingNews(title, msg, bottom, sec)",
+		"body": [
+			"ESX.Scaleform.ShowBreakingNews(title, msg, bottom, sec)"
+		],
+		"description": "[Client] This function shows the 'Breaking News' scaleform used multiple times in the campaign. \n The msg and bottom variables support HTML."
+	},
+	"ESX.Scaleform.ShowFreemodeMessage(title, msg, sec)":{
+		"prefix":"ESX.Scaleform.ShowFreemodeMessage(title, msg, sec)",
+		"body": [
+			"ESX.Scaleform.ShowFreemodeMessage(title, msg, sec)"
+		],
+		"description": "[Client] This function displays a freemode message for the player."
+	},
+	"ESX.Scaleform.ShowPopupWarning(title, msg, bottom, sec)":{
+		"prefix":"ESX.Scaleform.ShowPopupWarning(title, msg, bottom, sec)",
+		"body": [
+			"ESX.Scaleform.ShowPopupWarning(title, msg, bottom, sec)"
+		],
+		"description": "[Client] This function shows a basic popup warning, like the quit confirmation warning."
+	},
+	"ESX.Scaleform.ShowTrafficMovie(sec)":{
+		"prefix":"ESX.Scaleform.ShowTrafficMovie(sec)",
+		"body": [
+			"ESX.Scaleform.ShowTrafficMovie(sec)"
+		],
+		"description": "[Client] This function starts the traffic scaleform movie used in the campaign."
+	},
+	"ESX.Scaleform.Utils.RequestScaleformMovie(movie)":{
+		"prefix":"ESX.Scaleform.Utils.RequestScaleformMovie(movie)",
+		"body": [
+			"ESX.Scaleform.Utils.RequestScaleformMovie(movie)"
+		],
+		"description": "[Client] This function requests and returns the scaleform movie parsed."
+	},
+	"ESX.Streaming.RequestAnimDict(animDict, cb)":{
+		"prefix":"ESX.Streaming.RequestAnimDict(animDict, cb)",
+		"body": [
+			"ESX.Streaming.RequestAnimDict(animDict, cb)"
+		],
+		"description": "[Client] This function requests and returns the animation directory parsed. A very common usage it to play animations using TaskPlayAnim(). You can use Alex Guirre's Animations List found on Github."
+	},
+	"ESX.Streaming.RequestAnimSet(animSet, cb)":{
+		"prefix":"ESX.Streaming.RequestAnimSet(animSet, cb)",
+		"body": [
+			"ESX.Streaming.RequestAnimSet(animSet, cb)"
+		],
+		"description": "[Client] This function requests and returns the animation set parsed. Animation sets provide movement styles, commonly used with SetPedMovementClipset()."
+	},
+	"ESX.Streaming.RequestModel(model, cb)":{
+		"prefix":"ESX.Streaming.RequestModel(model, cb)",
+		"body": [
+			"ESX.Streaming.RequestModel(model, cb)"
+		],
+		"description": "[Client] This function requests and returns the specified model parsed, a very common usage is spawning objects, etc."
+	},
+	"ESX.Streaming.RequestNamedPtfxAsset(assetName, cb)":{
+		"prefix":"ESX.Streaming.RequestNamedPtfxAsset(assetName, cb)",
+		"body": [
+			"ESX.Streaming.RequestNamedPtfxAsset(assetName, cb)"
+		],
+		"description": "[Client] Check the page in the ESX Documentation. \n https://esx-org.github.io/es_extended/client/functions/streaming/requestnamedptfxasset/ "
+	},
+	"ESX.Streaming.RequestStreamedTextureDict(textureDict, cb)":{
+		"prefix":"ESX.Streaming.RequestStreamedTextureDict(textureDict, cb)",
+		"body": [
+			"ESX.Streaming.RequestStreamedTextureDict(textureDict, cb)"
+		],
+		"description": "[Client] This function requests and returns the texture directory parsed. This is commonly used when loading sprites, then draw them on screen using DrawSprite(), an example would be drawing a speedometer."
+	},
+	"ESX.Streaming.RequestWeaponAsset(weaponHash, cb)":{
+		"prefix":"ESX.Streaming.RequestWeaponAsset(weaponHash, cb)",
+		"body": [
+			"ESX.Streaming.RequestWeaponAsset(weaponHash, cb)"
+		],
+		"description": "[Client] Check the page in the ESX Documentation. \n https://esx-org.github.io/es_extended/client/functions/streaming/requestweaponasset/"
+	},
+	"ESX.UI.ShowInventoryItemNotification(add, item, count)":{
+		"prefix":"ESX.UI.ShowInventoryItemNotification(add, item, count)",
+		"body": [
+			"ESX.UI.ShowInventoryItemNotification(add, item, count)"
+		],
+		"description": "[Client] This function shows an inventory item notification."
+	},
+	"ESX.UI.HUD.RegisterElement(name, index, priority, html, data)":{
+		"prefix":"ESX.UI.HUD.RegisterElement(name, index, priority, html, data)",
+		"body": [
+			"ESX.UI.HUD.RegisterElement(name, index, priority, html, data)"
+		],
+		"description": "[Client] This function registers a HUD element."
+	},
+	"ESX.UI.HUD.RemoveElement(name)":{
+		"prefix":"ESX.UI.HUD.RemoveElement(name)",
+		"body": [
+			"ESX.UI.HUD.RemoveElement(name)"
+		],
+		"description": "[Client] This function removes a HUD element."
+	},
+	"ESX.UI.HUD.SetDisplay(opacity)":{
+		"prefix":"ESX.UI.HUD.SetDisplay(opacity)",
+		"body": [
+			"ESX.UI.HUD.SetDisplay(opacity)"
+		],
+		"description": "[Client] This function sets the HUD opacity."
+	},
+	"ESX.UI.HUD.UpdateElement(name, data)":{
+		"prefix":"ESX.UI.HUD.UpdateElement(name, data)",
+		"body": [
+			"ESX.UI.HUD.UpdateElement(name, data)"
+		],
+		"description": "[Client] This function updates HUD elements."
+	},
+	"ESX.UI.Menu.Close(type, namespace, name)":{
+		"prefix":"ESX.UI.Menu.Close(type, namespace, name)",
+		"body": [
+			"ESX.UI.Menu.Close(type, namespace, name)"
+		],
+		"description": "[Client] This function closes a menu."
+	},
+	"ESX.UI.Menu.CloseAll()":{
+		"prefix":"ESX.UI.Menu.CloseAll()",
+		"body": [
+			"ESX.UI.Menu.CloseAll()"
+		],
+		"description": "[Client] This function closes all open menus."
+	},
+	"ESX.UI.Menu.GetOpened(type, namespace, name)":{
+		"prefix":"ESX.UI.Menu.GetOpened(type, namespace, name)",
+		"body": [
+			"ESX.UI.Menu.GetOpened(type, namespace, name)"
+		],
+		"description": "[Client] This function gets all opened menus."
+	},
+	"ESX.UI.Menu.IsOpen(type, namespace, name)":{
+		"prefix":"ESX.UI.Menu.IsOpen(type, namespace, name)",
+		"body": [
+			"ESX.UI.Menu.IsOpen(type, namespace, name)"
+		],
+		"description": "[Client] This function checks if a menu is open."
+	},
+	"ESX.UI.Menu.Open(type, namespace, name, data, submit, cancel, change, close)":{
+		"prefix":"ESX.UI.Menu.Open(type, namespace, name, data, submit, cancel, change, close)",
+		"body": [
+			"ESX.UI.Menu.Open(type, namespace, name, data, submit, cancel, change, close)"
+		],
+		"description": "[Client] This function opens a menu."
+	},
+	"ESX.UI.Menu.RegisterType(type, open, close)":{
+		"prefix":"ESX.UI.Menu.RegisterType(type, open, close)",
+		"body": [
+			"ESX.UI.Menu.RegisterType(type, open, close)"
+		],
+		"description": "[Client] This function registers a menu type."
+	},
+
+	"AddEventHandler('esx:playerLoader', function(xPlayer) end)":{
+		"prefix":"AddEventHandler('esx:playerLoader', function(xPlayer) end)",
+		"body": [
+			"AddEventHandler('esx:playerLoader', function(xPlayer) end)"
+		],
+		"description": "[Client] This event will be triggered when the Player is loaded."
+	},
+
+	"TriggerClientEvent('esx:showAdvancedNotification', source, title, subject, msg, icon, iconType)":{
+		"prefix":"TriggerClientEvent('esx:showAdvancedNotification', source, title, subject, msg, icon, iconType)",
+		"body": [
+			"TriggerClientEvent('esx:showAdvancedNotification', source, title, subject, msg, icon, iconType)"
+		],
+		"description": "[Server] This event shows a notification for the specified source."
+	},
+
+	"TriggerClientEvent('esx:showHelpNotification', source, msg)":{
+		"prefix":"TriggerClientEvent('esx:showHelpNotification', source, msg)",
+		"body": [
+			"TriggerClientEvent('esx:showHelpNotification', source, msg)"
+		],
+		"description": "[Server] This event shows a help notification with the parsed message."
+	},
+
+	"TriggerClientEvent('esx:showNotification', source, '~y~Hello ~b~world~s~!')":{
+		"prefix":"TriggerClientEvent('esx:showNotification', source, '~y~Hello ~b~world~s~!')",
+		"body": [
+			"TriggerClientEvent('esx:showNotification', source, '~y~Hello ~b~world~s~!')"
+		],
+		"description": "[Server] This is what you'll want to use server side when you wan to send a notification."
+	},
+
+	"ESX.CreatePickup(type, name, count, label, player)":{
+		"prefix":"ESX.CreatePickup(type, name, count, label, player)",
+		"body": [
+			"ESX.CreatePickup(type, name, count, label, player)"
+		],
+		"description": "[Server] This function creates a pickup."
+	},
+	"ESX.GetItemLabel(item)":{
+		"prefix":"ESX.GetItemLabel(item)",
+		"body": [
+			"ESX.GetItemLabel(item)"
+		],
+		"description": "[Server] This function returns the item label."
+	},
+	"ESX.GetPlayerFromId(source)":{
+		"prefix":"ESX.GetPlayerFromId(source)",
+		"body": [
+			"ESX.GetPlayerFromId(source)"
+		],
+		"description": "[Server] This function gets a player from the ID."
+	},
+	"ESX.GetPlayerFromIdentifier(identifier)":{
+		"prefix":"ESX.GetPlayerFromIdentifier(identifier)",
+		"body": [
+			"ESX.GetPlayerFromIdentifier(identifier)"
+		],
+		"description": "[Server] This function gets a player from the identifier."
+	},
+
+	"ESX.GetPlayers()":{
+		"prefix":"ESX.GetPlayers()",
+		"body": [
+			"ESX.GetPlayers()"
+		],
+		"description": "[Server] This function returns an array of all online players ID's."
+	},
+	
+	"ESX.RegisterServerCallback(name, cb)":{
+		"prefix":"ESX.RegisterServerCallback(name, cb)",
+		"body": [
+			"ESX.RegisterServerCallback(name, cb)"
+		],
+		"description": "[Server] This function registers a server callback."
+	},
+	
+	"ESX.RegisterUsableItem(item, cb)":{
+		"prefix":"ESX.RegisterUsableItem(item, cb)",
+		"body": [
+			"ESX.RegisterUsableItem(item, cb)"
+		],
+		"description": "[Server] This function registers a usable item."
+	},
+	
+	"ESX.SavePlayer(player, cb)":{
+		"prefix":"ESX.SavePlayer(player, cb)",
+		"body": [
+			"ESX.SavePlayer(player, cb)"
+		],
+		"description": "[Server] This function saves a player."
+	},
+	"ESX.SavePlayers(cb)":{
+		"prefix":"ESX.SavePlayers(cb)",
+		"body": [
+			"ESX.SavePlayers(cb)"
+		],
+		"description": "[Server] This function saves players."
+	},
+	
+	"ESX.Trace(str)":{
+		"prefix":"ESX.Trace(str)",
+		"body": [
+			"ESX.Trace(str)"
+		],
+		"description": "[Server] This function shows a debug line if Config.EnableDebug is true."
+	},
+	
+	"ESX.UseItem(source)":{
+		"prefix":"ESX.UseItem(source)",
+		"body": [
+			"ESX.UseItem(source)"
+		],
+		"description": "[Server] This function uses an item."
+	},
+	
+	"xPlayer.addAccountMoney(account, money)":{
+		"prefix":"xPlayer.addAccountMoney(account, money)",
+		"body": [
+			"xPlayer.addAccountMoney(account, money)"
+		],
+		"description": "[Server] This function adds account money."
+	},
+	
+	"xPlayer.addBank(money)":{
+		"prefix":"xPlayer.addBank(money)",
+		"body": [
+			"xPlayer.addBank(money)"
+		],
+		"description": "[Server] This function adds bank money."
+	},
+	
+	"xPlayer.addInventoryItem(item, count)":{
+		"prefix":"xPlayer.addInventoryItem(item, count)",
+		"body": [
+			"xPlayer.addInventoryItem(item, count)"
+		],
+		"description": "[Server] This function adds an inventory item."
+	},
+	
+	"xPlayer.addMoney(money)":{
+		"prefix":"xPlayer.addMoney(money)",
+		"body": [
+			"xPlayer.addMoney(money)"
+		],
+		"description": "[Server] This function adds money."
+	},
+	
+	"xPlayer.addWeapon(weaponName)":{
+		"prefix":"xPlayer.addWeapon(weaponName)",
+		"body": [
+			"xPlayer.addWeapon(weaponName)"
+		],
+		"description": "[Server] This function adds a weapon."
+	},
+	
+	"xPlayer.addWeaponComponent(weaponName, weaponComponent)":{
+		"prefix":"xPlayer.addWeaponComponent(weaponName, weaponComponent)",
+		"body": [
+			"xPlayer.addWeaponComponent(weaponName, weaponComponent)"
+		],
+		"description": "[Server] This function adds a weapon component to a weapon, if the player has it. \nThe available component list can be found in the weapon config file."
+	},
+	
+	"xPlayer.displayBank(money)":{
+		"prefix":"xPlayer.displayBank(money)",
+		"body": [
+			"xPlayer.displayBank(money)"
+		],
+		"description": "[Server] This function displays bank money."
+	},
+	
+	"xPlayer.displayMoney(money)":{
+		"prefix":"xPlayer.displayMoney(money)",
+		"body": [
+			"xPlayer.displayMoney(money)"
+		],
+		"description": "[Server] This function displays money."
+	},
+	"xPlayer.getAccount()":{
+		"prefix":"xPlayer.getAccount()",
+		"body": [
+			"xPlayer.getAccount()"
+		],
+		"description": "[Server] This function gets an account."
+	},
+
+	"xPlayer.getAccounts()":{
+		"prefix":"xPlayer.getAccounts()",
+		"body": [
+			"xPlayer.getAccounts()"
+		],
+		"description": "[Server] This function gets accounts."
+	},
+
+	"xPlayer.getBank()":{
+		"prefix":"xPlayer.getBank()",
+		"body": [
+			"xPlayer.getBank()"
+		],
+		"description": "[Server] This function gets bank balance."
+	},
+	
+	"xPlayer.getCoords()":{
+		"prefix":"xPlayer.getCoords()",
+		"body": [
+			"xPlayer.getCoords()"
+		],
+		"description": "[Server] This function gets coordinates."
+	},
+	
+	"xPlayer.getGroup()":{
+		"prefix":"xPlayer.getGroup()",
+		"body": [
+			"xPlayer.getGroup()"
+		],
+		"description": "[Server] This function gets a group."
+	},
+	
+	"xPlayer.getIdentifier()":{
+		"prefix":"xPlayer.getIdentifier()",
+		"body": [
+			"xPlayer.getIdentifier()"
+		],
+		"description": "[Server] This function displays gets an identifier."
+	},
+	
+	"xPlayer.getInventory()":{
+		"prefix":"xPlayer.getInventory()",
+		"body": [
+			"xPlayer.getInventory()"
+		],
+		"description": "[Server] This functions gets inventory."
+	},
+	
+	"xPlayer.getInventoryItem(item)":{
+		"prefix":"xPlayer.getInventoryItem(item)",
+		"body": [
+			"xPlayer.getInventoryItem(item)"
+		],
+		"description": "[Server] This function gets an inventory item."
+	},
+	
+	"xPlayer.getJob()":{
+		"prefix":"xPlayer.getJob()",
+		"body": [
+			"xPlayer.getJob()"
+		],
+		"description": "[Server] This function gets a job."
+	},
+	
+	"xPlayer.getLastPosition()":{
+		"prefix":"xPlayer.getLastPosition()",
+		"body": [
+			"xPlayer.getLastPosition()"
+		],
+		"description": "[Server] This functins gets the last position of stuff."
+	},
+	
+	"xPlayer.getLoadout()":{
+		"prefix":"xPlayer.getLoadout()",
+		"body": [
+			"xPlayer.getLoadout()"
+		],
+		"description": "[Server] This function gets a loadout."
+	},
+	
+	"xPlayer.getMissingAccounts()":{
+		"prefix":"xPlayer.getMissingAccounts()",
+		"body": [
+			"xPlayer.getMissingAccounts()"
+		],
+		"description": "[Server] This function gets missing accounts."
+	},
+	
+	"xPlayer.getMoney()":{
+		"prefix":"xPlayer.getMoney()",
+		"body": [
+			"xPlayer.getMoney()"
+		],
+		"description": "[Server] This function gets money."
+	},
+	
+	"xPlayer.getName()":{
+		"prefix":"xPlayer.getName()",
+		"body": [
+			"xPlayer.getName()"
+		],
+		"description": "[Server] This function gets a name."
+	},
+	
+	"xPlayer.getPermissions()":{
+		"prefix":"xPlayer.getPermissions()",
+		"body": [
+			"xPlayer.getPermissions()"
+		],
+		"description": "[Server] This function gets a permission level."
+	},
+	
+	"xPlayer.getPlayer()":{
+		"prefix":"xPlayer.getPlayer()",
+		"body": [
+			"xPlayer.getPlayer()"
+		],
+		"description": "[Server] This function gets the EssentialMode player object."
+	},
+	
+	"xPlayer.getSessionVar(key)":{
+		"prefix":"xPlayer.getSessionVar(key)",
+		"body": [
+			"xPlayer.getSessionVar(key)"
+		],
+		"description": "[Server] This function gets a session variable."
+	},
+	
+	"xPlayer.getWeapon(weaponName)":{
+		"prefix":"xPlayer.getWeapon(weaponName)",
+		"body": [
+			"xPlayer.getWeapon(weaponName)"
+		],
+		"description": "[Server] This functions returns if the loadoutNum and a weapon object for the weapon if the player has it."
+	},
+	
+	"xPlayer.hasWeapon(weaponName)":{
+		"prefix":"xPlayer.hasWeapon(weaponName)",
+		"body": [
+			"xPlayer.hasWeapon(weaponName)"
+		],
+		"description": "[Server] This functions returns if the player has the specified weapon."
+	},
+	
+	"xPlayer.hasWeaponComponent(weaponName, weaponComponent)":{
+		"prefix":"xPlayer.hasWeaponComponent(weaponName, weaponComponent)",
+		"body": [
+			"xPlayer.hasWeaponComponent(weaponName, weaponComponent)"
+		],
+		"description": "[Server] This functions returns (boolean) if the player has the specified weapon component for a given weapon."
+	},
+	
+	"xPlayer.kick(reason)":{
+		"prefix":"xPlayer.kick(reason)",
+		"body": [
+			"xPlayer.kick(reason)"
+		],
+		"description": "[Server] This function kicks a player with a reason."
+	},
+	
+	"xPlayer.removeAccountMoney(account, money)":{
+		"prefix":"xPlayer.removeAccountMoney(account, money)",
+		"body": [
+			"xPlayer.removeAccountMoney(account, money)"
+		],
+		"description": "[Server] This function removes account money."
+	},
+	
+	"xPlayer.removeBank(money)":{
+		"prefix":"xPlayer.removeBank(money)",
+		"body": [
+			"xPlayer.removeBank(money)"
+		],
+		"description": "[Server] This function removes bank money."
+	},
+	
+	"xPlayer.removeInventoryItem(item, count)":{
+		"prefix":"xPlayer.removeInventoryItem(item, count)",
+		"body": [
+			"xPlayer.removeInventoryItem(item, count)"
+		],
+		"description": "[Server] This function removes an inventory item."
+	},
+	
+	"xPlayer.removeMoney(money)":{
+		"prefix":"xPlayer.removeMoney(money)",
+		"body": [
+			"xPlayer.removeMoney(money)"
+		],
+		"description": "[Server] This function removes money."
+	},
+	
+	"xPlayer.removeWeapon(weaponName, ammo)":{
+		"prefix":"xPlayer.removeWeapon(weaponName, ammo)",
+		"body": [
+			"xPlayer.removeWeapon(weaponName, ammo)"
+		],
+		"description": "[Server] This function removes a weapon from the player. \n WARNING: The ammo variable is optional to delete a certain amount of ammo. Not specifying it will remove all available ammo."
+	},
+	
+	"xPlayer.removeWeaponComponent(weaponName, weaponComponent)":{
+		"prefix":"xPlayer.removeWeaponComponent(weaponName, weaponComponent)",
+		"body": [
+			"xPlayer.removeWeaponComponent(weaponName, weaponComponent)"
+		],
+		"description": "[Server] This function removes a weapon component from a player, if the player has it. \n The available component list can be found in the weapon config file."
+	},
+	
+	"xPlayer.setAccountMoney(account, money)":{
+		"prefix":"xPlayer.setAccountMoney(account, money)",
+		"body": [
+			"xPlayer.setAccountMoney(account, money)"
+		],
+		"description": "[Server] This function sets account money."
+	},
+	
+	"xPlayer.setBankBalance(money)":{
+		"prefix":"xPlayer.setBankBalance(money)",
+		"body": [
+			"xPlayer.setBankBalance(money)"
+		],
+		"description": "[Server] This function sets bank balance."
+	},
+	
+	"xPlayer.setCoords(x, y, z)":{
+		"prefix":"xPlayer.setCoords(x, y, z)",
+		"body": [
+			"xPlayer.setCoords(x, y, z)"
+		],
+		"description": "[Server] This function sets coordinates."
+	},
+	
+	"xPlayer.setInventoryItem(item, count)":{
+		"prefix":"xPlayer.setInventoryItem(item, count)",
+		"body": [
+			"xPlayer.setInventoryItem(item, count)"
+		],
+		"description": "[Server] This function sets an inventory item."
+	},
+	
+	"xPlayer.setJob(name, grade)":{
+		"prefix":"xPlayer.setJob(name, grade)",
+		"body": [
+			"xPlayer.setJob(name, grade)"
+		],
+		"description": "[Server] This functions sets a job for a player."
+	},
+	
+	"xPlayer.setMoney(money)":{
+		"prefix":"xPlayer.setMoney(money)",
+		"body": [
+			"xPlayer.setMoney(money)"
+		],
+		"description": "[Server] This function sets money."
+	},
+	
+	"xPlayer.setName(newName)":{
+		"prefix":"xPlayer.setName(newName)",
+		"body": [
+			"xPlayer.setName(newName)"
+		],
+		"description": "[Server] This function sets the player name."
+	},
+	
+	"xPlayer.setPermissions(permissionLevel)":{
+		"prefix":"xPlayer.setPermissions(permissionLevel)",
+		"body": [
+			"xPlayer.setPermissions(permissionLevel)"
+		],
+		"description": "[Server] This function sets a permission level."
+	},
+	
+	"xPlayer.setSessionVar(key, value)":{
+		"prefix":"xPlayer.setSessionVar(key, value)",
+		"body": [
+			"xPlayer.setSessionVar(key, value)"
+		],
+		"description": "[Server] This function sets a session variable."
+	},
+
+}
