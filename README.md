@@ -6,3 +6,7 @@ ESX User Snippets for VSCode
 **More information:**
 
 * https://code.visualstudio.com/docs/editor/userdefinedsnippets
+
+
+#TODO:
+  - Change from GLOBAL to lua without it being a lua.json. (Using scope?)
